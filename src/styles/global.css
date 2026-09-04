@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+/* ── Lune Pastelería — Estilos Globales & Responsividad ──────────────────── */
+/* Paleta: #000120 | #0E1C49 | #4A5F8C | #DAE0EE | #8F9AB6  */
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #000120;
+  background-color: #000120;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Serif principal (cuerpo de texto elegante, headings generales) */
+.font-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Script caligráfico — para "Lune" / logotipo / firmas / acentos */
+.font-script {
+  font-family: 'Great Vibes', cursive;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+/* Serif con versalitas — para "ALTA PASTELERÍA" y subtítulos tipo tagline */
+.font-tagline {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+/* Scrollbar estilizada */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000120;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4A5F8C;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #DAE0EE;
+}
+
+::selection {
+  background: #4A5F8C;
+  color: #DAE0EE;
+}
+
+/* Ocultar barra de scroll para contenedores deslizables en móvil */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Optimización táctil */
+button,
+a {
+  touch-action: manipulation;
+}
